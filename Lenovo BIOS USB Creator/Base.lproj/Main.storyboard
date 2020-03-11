@@ -743,6 +743,9 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <binding destination="hhF-1e-UbW" name="value" keyPath="values.Isoname" id="H8p-75-BBf"/>
+                                </connections>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAp-qp-FJK">
                                 <rect key="frame" x="165" y="273" width="159" height="25"/>
@@ -795,20 +798,23 @@ DQ
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="browseFileWithSender:" target="XfG-lQ-9wD" id="Eh3-i5-GL1"/>
+                                </connections>
                             </button>
                             <scrollView fixedFrame="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-q7-jXB">
-                                <rect key="frame" x="32" y="63" width="485" height="193"/>
+                                <rect key="frame" x="12" y="63" width="502" height="193"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="i7l-Zv-t3v">
-                                    <rect key="frame" x="1" y="1" width="483" height="191"/>
+                                    <rect key="frame" x="1" y="1" width="500" height="191"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView ambiguous="YES" editable="NO" importsGraphics="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="uDr-xI-w9d">
-                                            <rect key="frame" x="0.0" y="0.0" width="483" height="191"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="191"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="483" height="191"/>
+                                            <size key="minSize" width="500" height="191"/>
                                             <size key="maxSize" width="624" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -832,6 +838,7 @@ DQ
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="hhF-1e-UbW"/>
             </objects>
             <point key="canvasLocation" x="700.5" y="299.5"/>
         </scene>

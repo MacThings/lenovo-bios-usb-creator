@@ -62,6 +62,34 @@ class MainWindow: NSViewController {
      }
         
     
+    
+    @IBAction func browseFile(sender: AnyObject) {
+        
+        let dialog = NSOpenPanel();
+        
+        dialog.title                   = "Choose a Folder";
+        dialog.showsResizeIndicator    = true;
+        dialog.showsHiddenFiles        = false;
+        dialog.canChooseDirectories    = true;
+        dialog.canCreateDirectories    = true;
+        dialog.allowsMultipleSelection = false;
+        dialog.allowedFileTypes        = ["iso"];
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url // Pathname of the file
+            
+            if (result != nil) {
+                let path = result!.path
+                let isopath = (path as String)
+                UserDefaults.standard.set(isopath, forKey: "Isopath")
+                self.syncShellExec(path: self.scriptPath, args: ["_get_isoname"])
+            }
+        } else {
+            return
+        }
+  
+    }
+    
     @IBAction func refresh_drives(_ sender: Any) {
         output_window.textStorage?.mutableString.setString("")
         self.syncShellExec(path: self.scriptPath, args: ["_get_drives"])
