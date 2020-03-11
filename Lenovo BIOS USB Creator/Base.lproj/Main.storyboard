@@ -717,33 +717,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="525" height="369"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-q7-jXB">
-                                <rect key="frame" x="20" y="61" width="485" height="193"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="i7l-Zv-t3v">
-                                    <rect key="frame" x="1" y="1" width="483" height="191"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="uDr-xI-w9d">
-                                            <rect key="frame" x="0.0" y="0.0" width="483" height="191"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="483" height="191"/>
-                                            <size key="maxSize" width="624" height="10000000"/>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </textView>
-                                    </subviews>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pmT-4U-qjE">
-                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="UaW-7z-D6G">
-                                    <rect key="frame" x="609" y="1" width="16" height="169"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3aN-L3-eIL">
                                 <rect key="frame" x="97" y="305" width="64" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -765,7 +738,7 @@
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bId-jF-PEo">
                                 <rect key="frame" x="167" y="302" width="154" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="NbC-tI-Tqq">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="NbC-tI-Tqq">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -774,14 +747,12 @@
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAp-qp-FJK">
                                 <rect key="frame" x="165" y="273" width="159" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ztU-UE-PtW" id="yTh-Ic-WLi">
+                                <popUpButtonCell key="cell" type="push" title="Please select ..." bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="DTI-CG-uWl" id="yTh-Ic-WLi">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <menu key="menu" id="CtN-qK-GY8">
                                         <items>
-                                            <menuItem title="Item 1" state="on" id="ztU-UE-PtW"/>
-                                            <menuItem title="Item 2" id="xhI-0S-9Mk"/>
-                                            <menuItem title="Item 3" id="JRS-gM-4QA"/>
+                                            <menuItem title="Please select ..." state="on" id="DTI-CG-uWl"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
@@ -813,6 +784,9 @@ DQ
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="refresh_drives:" target="XfG-lQ-9wD" id="mv7-ub-tec"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41t-8p-QWt">
                                 <rect key="frame" x="340" y="295" width="120" height="32"/>
@@ -822,8 +796,40 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <scrollView fixedFrame="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-q7-jXB">
+                                <rect key="frame" x="32" y="63" width="485" height="193"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="i7l-Zv-t3v">
+                                    <rect key="frame" x="1" y="1" width="483" height="191"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="uDr-xI-w9d">
+                                            <rect key="frame" x="0.0" y="0.0" width="483" height="191"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="483" height="191"/>
+                                            <size key="maxSize" width="624" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pmT-4U-qjE">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="UaW-7z-D6G">
+                                    <rect key="frame" x="609" y="1" width="16" height="169"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="content_scroller" destination="AX4-q7-jXB" id="6jG-e5-ClS"/>
+                        <outlet property="output_window" destination="uDr-xI-w9d" id="8FK-f2-wQq"/>
+                        <outlet property="pulldown_menu" destination="YAp-qp-FJK" id="C2D-Ic-0Mu"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

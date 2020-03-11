@@ -13,20 +13,34 @@
 		2A74E9EB2418ECD50098FD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A74E9EA2418ECD50098FD34 /* Assets.xcassets */; };
 		2A74E9EE2418ECD50098FD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A74E9EC2418ECD50098FD34 /* Main.storyboard */; };
 		2A74E9F82418F5810098FD34 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74E9F62418F5810098FD34 /* MainWindow.swift */; };
-		2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script */ = {isa = PBXBuildFile; fileRef = 2A74E9FC2418F6040098FD34 /* geteltorito.pl */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74E9FC2418F6040098FD34 /* geteltorito.pl */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A74EA012418FACF0098FD34 /* lenovobiosusbcreator.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A74EA002418FACF0098FD34 /* lenovobiosusbcreator.html */; };
+		2A74EA042418FEE00098FD34 /* script.command in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74EA022418FECB0098FD34 /* script.command */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A74EA0924191FF10098FD34 /* perl.zip in Copy Perl Bundle */ = {isa = PBXBuildFile; fileRef = 2A74EA0624191FD20098FD34 /* perl.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2A74E9FA2418F5E20098FD34 /* Copy Py-Script */ = {
+		2A74E9FA2418F5E20098FD34 /* Copy Py-Script (2 items) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Script;
 			dstSubfolderSpec = 7;
 			files = (
-				2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script */,
+				2A74EA042418FEE00098FD34 /* script.command in Copy Py-Script (2 items) */,
+				2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script (2 items) */,
 			);
-			name = "Copy Py-Script";
+			name = "Copy Py-Script (2 items)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A74EA0824191FE00098FD34 /* Copy Perl Bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Perl;
+			dstSubfolderSpec = 7;
+			files = (
+				2A74EA0924191FF10098FD34 /* perl.zip in Copy Perl Bundle */,
+			);
+			name = "Copy Perl Bundle";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -43,6 +57,8 @@
 		2A74E9F62418F5810098FD34 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		2A74E9FC2418F6040098FD34 /* geteltorito.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = geteltorito.pl; sourceTree = "<group>"; };
 		2A74EA002418FACF0098FD34 /* lenovobiosusbcreator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lenovobiosusbcreator.html; sourceTree = "<group>"; };
+		2A74EA022418FECB0098FD34 /* script.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = script.command; sourceTree = "<group>"; };
+		2A74EA0624191FD20098FD34 /* perl.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = perl.zip; sourceTree = "<group>"; };
 		5FBE37B77DC88B292D9BC7F0 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lenovo BIOS USB Creator.release.xcconfig"; path = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.release.xcconfig"; sourceTree = "<group>"; };
 		94634E03BBC8429BC107A149 /* Pods_Lenovo_BIOS_USB_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lenovo_BIOS_USB_Creator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +96,7 @@
 		2A74E9E52418ECD00098FD34 /* Lenovo BIOS USB Creator */ = {
 			isa = PBXGroup;
 			children = (
+				2A74EA0524191FD20098FD34 /* Perl */,
 				2A74E9FB2418F6040098FD34 /* Script */,
 				2A74E9E62418ECD00098FD34 /* AppDelegate.swift */,
 				2A74E9E82418ECD00098FD34 /* ViewController.swift */,
@@ -97,8 +114,17 @@
 			isa = PBXGroup;
 			children = (
 				2A74E9FC2418F6040098FD34 /* geteltorito.pl */,
+				2A74EA022418FECB0098FD34 /* script.command */,
 			);
 			path = Script;
+			sourceTree = "<group>";
+		};
+		2A74EA0524191FD20098FD34 /* Perl */ = {
+			isa = PBXGroup;
+			children = (
+				2A74EA0624191FD20098FD34 /* perl.zip */,
+			);
+			path = Perl;
 			sourceTree = "<group>";
 		};
 		999FA46A06CC48CA936A15A2 /* Frameworks */ = {
@@ -130,7 +156,8 @@
 				2A74E9E02418ECD00098FD34 /* Frameworks */,
 				2A74E9E12418ECD00098FD34 /* Resources */,
 				647702340415A787D401D2D0 /* [CP] Embed Pods Frameworks */,
-				2A74E9FA2418F5E20098FD34 /* Copy Py-Script */,
+				2A74E9FA2418F5E20098FD34 /* Copy Py-Script (2 items) */,
+				2A74EA0824191FE00098FD34 /* Copy Perl Bundle */,
 				2A74E9FF2418F8430098FD34 /* ShellScript */,
 			);
 			buildRules = (
@@ -394,7 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Lenovo BIOS USB Creator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Lenovo BIOS USB Creator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
