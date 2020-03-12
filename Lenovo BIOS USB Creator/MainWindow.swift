@@ -20,7 +20,6 @@ class MainWindow: NSViewController {
     var outputTimer: Timer?
     
     let scriptPath = Bundle.main.path(forResource: "/Script/script", ofType: "command")!
-    let appversion : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,8 +103,7 @@ class MainWindow: NSViewController {
         output_window.textStorage?.mutableString.setString("")
         self.syncShellExec(path: self.scriptPath, args: ["_refresh"])
     }
-    
-    
+        
     @objc func menuItemClicked(_ sender: NSMenuItem) {
         self.pulldown_menu.item(withTitle: "Please select ...")?.isHidden=true
         let destination = sender.title
@@ -119,8 +117,7 @@ class MainWindow: NSViewController {
         }
     }
     
-    
-     func syncShellExec(path: String, args: [String] = []) {
+    func syncShellExec(path: String, args: [String] = []) {
         let process            = Process()
         process.launchPath     = "/bin/bash"
         process.arguments      = [path] + args

@@ -11,8 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    
+    let scriptPath = Bundle.main.path(forResource: "/Script/script", ofType: "command")!
+    
     func applicationShouldTerminateAfterLastWindowClosed (_
         theApplication: NSApplication) -> Bool {
+        self.syncShellExec(path: self.scriptPath, args: ["_quit_app"])
         return true
     }
 
@@ -24,6 +28,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    func syncShellExec(path: String, args: [String] = []) {
+        let process            = Process()
+        process.launchPath     = "/bin/bash"
+        process.arguments      = [path] + args
+        let outputPipe         = Pipe()
+        let filelHandler       = outputPipe.fileHandleForReading
+        process.standardOutput = outputPipe
+        process.launch()
+        process.waitUntilExit()
+        filelHandler.readabilityHandler = nil
+    }
+    
 }
 

@@ -89,9 +89,25 @@ function _write_device()
       exit
     fi
     
+    which perl > /dev/null
+    if [[ $? != "0" ]]; then
+      _helpDefaultWrite "Perl" "No"
+      unzip -qo "$ScriptPath"/../Perl/perl.zip -d "$temp_path"
+        if [ ! -d /usr/local/Cellar ]; then
+          _helpDefaultWrite "Cellar" "No"
+          osascript -e 'do shell script "mkdir /usr/local/Cellar; cd /usr/local/Cellar; ln -s '$temp_path'/perl perl" with administrator privileges'
+          cd "$ScriptPath"
+        fi
+    fi
+    
     echo -e "Converting $isoname"
 
-    /usr/local/Cellar/perl/5.30.0/bin/perl "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
+    perl_pre=$( _helpDefaultRead "Perl" )
+    if [[ "$perl_pre" = "No" ]]; then
+      /usr/local/Cellar/perl/5.30.0/bin/perl "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
+    else
+      perl "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
+    fi
 
     if [[ $? != "0" ]]; then
       echo -e "An Error has occured. Try again.\n"
@@ -117,18 +133,21 @@ function _write_device()
     
 }
 
-#function _check_perl()
-#{
-#
-#    which perl
-#    if [[ $? != "0" ]]; then
-#      unzip -qo "$ScriptPath"/../Perl/perl.zip -d "$temp_path"/
-#        if [ ! -d /usr/local/Cellar/perl ]; then
-#          mkdir /usr/local/Cellar
-#          cd /usr/local/Cellar
-#          ln -s "$temp_path"/perl perl
-#          cd "$ScriptPath"
-#    fi
-#}
+function _quit_app()
+{
+  cellar_preinstalled=$( _helpDefaultRead "Cellar" )
+  if [[ "$cellar_preinstalled" = "No" ]]; then
+    osascript -e 'do shell script "rm -rf /usr/local/Cellar" with administrator privileges'
+  else
+    perl_preinstalled=$( _helpDefaultRead "Perl" )
+    if [[ "$perl_preinstalled" = "No" ]]; then
+      if [ -d /usr/local/Cellar/perl ]; then
+        osascript -e 'do shell script "rm -rf /usr/local/Cellar/perl" with administrator privileges'
+        cd "$ScriptPath"
+      fi
+    fi
+  fi
+  rm -rf "$temp_path"
+}
 
 $1
