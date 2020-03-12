@@ -80,6 +80,7 @@
 			children = (
 				2A74E9E52418ECD00098FD34 /* Lenovo BIOS USB Creator */,
 				2A74E9E42418ECD00098FD34 /* Products */,
+				2A74EA002418FACF0098FD34 /* lenovobiosusbcreator.html */,
 				BED84F3980EE55E6BC3784F6 /* Pods */,
 				999FA46A06CC48CA936A15A2 /* Frameworks */,
 			);
@@ -105,7 +106,6 @@
 				2A74E9EF2418ECD50098FD34 /* Info.plist */,
 				2A74E9F02418ECD50098FD34 /* Lenovo_BIOS_USB_Creator.entitlements */,
 				2A74E9F62418F5810098FD34 /* MainWindow.swift */,
-				2A74EA002418FACF0098FD34 /* lenovobiosusbcreator.html */,
 			);
 			path = "Lenovo BIOS USB Creator";
 			sourceTree = "<group>";

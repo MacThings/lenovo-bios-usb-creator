@@ -25,6 +25,13 @@ class MainWindow: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+                
+        let destination = UserDefaults.standard.string(forKey: "Destination")
+        if destination != nil{
+            UserDefaults.standard.removeObject(forKey: "Destination")
+        }
+        
+        self.syncShellExec(path: self.scriptPath, args: ["_initial"])
         
         let fontsizeinit = UserDefaults.standard.string(forKey: "Font Size")
         if fontsizeinit == nil{
@@ -42,7 +49,7 @@ class MainWindow: NSViewController {
         output_window.font = NSFont(name: fontfam!, size: fontpt)
         DispatchQueue.global(qos: .background).async {
         self.syncShellExec(path: self.scriptPath, args: ["_get_drives"])
-        
+                    
         DispatchQueue.main.async {
         let filePath = "/private/tmp/lenovobios/drives_pulldown"
         if (FileManager.default.fileExists(atPath: filePath)) {
@@ -57,8 +64,11 @@ class MainWindow: NSViewController {
             self.pulldown_menu.menu?.addItem(withTitle: drive, action: #selector(MainWindow.menuItemClicked(_:)), keyEquivalent: "")
         }
 
+
+            
         }
     }
+        
      }
         
     
@@ -92,7 +102,7 @@ class MainWindow: NSViewController {
     
     @IBAction func refresh_drives(_ sender: Any) {
         output_window.textStorage?.mutableString.setString("")
-        self.syncShellExec(path: self.scriptPath, args: ["_get_drives"])
+        self.syncShellExec(path: self.scriptPath, args: ["_refresh"])
     }
     
     
@@ -101,6 +111,14 @@ class MainWindow: NSViewController {
         let destination = sender.title
         UserDefaults.standard.set(destination, forKey: "Destination")
     }
+
+    @IBAction func start(_ sender: Any) {
+        output_window.textStorage?.mutableString.setString("")
+        DispatchQueue.global(qos: .background).async {
+        self.syncShellExec(path: self.scriptPath, args: ["_write_device"])
+        }
+    }
+    
     
      func syncShellExec(path: String, args: [String] = []) {
         let process            = Process()

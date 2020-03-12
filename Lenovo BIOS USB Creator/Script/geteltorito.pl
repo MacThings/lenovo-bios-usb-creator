@@ -219,10 +219,4 @@ print STDERR "El Torito image starts at sector $imgStart and has $cnt sector(s) 
 # Now read the bootimage to stdout
 $image=getSector($imgStart, $cnt, $imageFile);
 
-if( length($outputFilename) ){
-   writeOutputFile($outputFilename, $image);
-   print STDERR "\nImage has been written to file \"$outputFilename\".\n";
-}else{
-   print "$image";
-   print STDERR "Image has been written to stdout ....\n"; 
-}
+

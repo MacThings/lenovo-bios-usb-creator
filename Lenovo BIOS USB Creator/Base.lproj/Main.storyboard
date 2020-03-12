@@ -779,6 +779,9 @@
 DQ
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="start:" target="XfG-lQ-9wD" id="n3I-6E-lei"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFm-tZ-qqV">
                                 <rect key="frame" x="340" y="269" width="120" height="32"/>
