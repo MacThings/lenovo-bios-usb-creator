@@ -17,6 +17,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed (_
         theApplication: NSApplication) -> Bool {
         self.syncShellExec(path: self.scriptPath, args: ["_quit_app"])
+        let destination = UserDefaults.standard.string(forKey: "Destination")
+        if destination != nil{
+            UserDefaults.standard.removeObject(forKey: "Destination")
+        }
+        let cellar = UserDefaults.standard.string(forKey: "Cellar")
+        if cellar != nil{
+            UserDefaults.standard.removeObject(forKey: "Cellar")
+        }
+        let perl = UserDefaults.standard.string(forKey: "Perl")
+        if perl != nil{
+            UserDefaults.standard.removeObject(forKey: "Perl")
+        }
         return true
     }
 

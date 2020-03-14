@@ -1,0 +1,96 @@
+/* Class = "NSMenuItem"; title = "Lenovo BIOS USB Creator"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Lenovo BIOS USB Creator";
+
+/* Class = "NSMenuItem"; title = "Quit Lenovo BIOS USB Creator"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Beende Lenovo BIOS USB Creator";
+
+/* Class = "NSMenuItem"; title = "About Lenovo BIOS USB Creator"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Über Lenovo BIOS USB Creator";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Bearbeiten";
+
+/* Class = "NSTextFieldCell"; title = "Destination Device:"; ObjectID = "8yk-Dw-GfM"; */
+"8yk-Dw-GfM.title" = "Zielgerät:";
+
+/* Class = "NSButtonCell"; title = "Stop"; ObjectID = "51X-Ma-9z6"; */
+"51X-Ma-9z6.title" = "Stop";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Fenster";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Hauptmenu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Einstellungen…";
+
+/* Class = "NSTextFieldCell"; title = "Lenovo® BIOS USB Creator"; ObjectID = "bqL-Sp-v26"; */
+"bqL-Sp-v26.title" = "Lenovo® BIOS USB Creator";
+
+/* Class = "NSMenuItem"; title = "Please select ..."; ObjectID = "DTI-CG-uWl"; */
+"DTI-CG-uWl.title" = "Bitte auswählen ...";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Lenovo BIOS USB Creator Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Lenovo BIOS USB Creator Help";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Fenster";
+
+/* Class = "NSButtonCell"; title = "Start"; ObjectID = "jou-7D-LvX"; */
+"jou-7D-LvX.title" = "Start";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Alle zeigen";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Alle nach vorne holen";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "mrM-th-0Aq"; */
+"mrM-th-0Aq.title" = "Auswählen";
+
+/* Class = "NSTextFieldCell"; title = "ISO File:"; ObjectID = "NDk-3U-uec"; */
+"NDk-3U-uec.title" = "ISO Datei:";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide Lenovo BIOS USB Creator"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Lenovo BIOS USB Creator ausblenden";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimieren";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSButtonCell"; title = "Refresh"; ObjectID = "Syi-6Z-lkM"; */
+"Syi-6Z-lkM.title" = "Auffrischen";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Fenster";
+
+/* Class = "NSMenu"; title = "Lenovo BIOS USB Creator"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Lenovo BIOS USB Creator";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Andere ausblenden";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Bearbeiten";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "Kopieren";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "x9p-sA-Yws"; */
+"x9p-sA-Yws.title" = "Auf Updates prüfen...";
+

@@ -10,10 +10,18 @@ import Cocoa
 import LetsMove
 
 class MainWindow: NSViewController {
-
+    
+    @IBOutlet weak var textfield_isopath: NSTextField!
+    @IBOutlet weak var pulldown_drives: NSPopUpButton!
+    @IBOutlet weak var button_select: NSButton!
+    @IBOutlet weak var button_refresh: NSButton!
+    
     @IBOutlet var output_window: NSTextView!
     @IBOutlet weak var content_scroller: NSScrollView!
     @IBOutlet weak var pulldown_menu: NSPopUpButton!
+    @IBOutlet weak var button_start: NSButton!
+    @IBOutlet weak var button_stop: NSButton!
+    @IBOutlet weak var progress_wheel: NSProgressIndicator!
     
     var process:Process!
     var out:FileHandle?
@@ -24,17 +32,14 @@ class MainWindow: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-                
-        let destination = UserDefaults.standard.string(forKey: "Destination")
-        if destination != nil{
-            UserDefaults.standard.removeObject(forKey: "Destination")
-        }
+
+        PFMoveToApplicationsFolderIfNecessary()
         
         self.syncShellExec(path: self.scriptPath, args: ["_initial"])
         
         let fontsizeinit = UserDefaults.standard.string(forKey: "Font Size")
         if fontsizeinit == nil{
-            UserDefaults.standard.set("14", forKey: "Font Size")
+            UserDefaults.standard.set("11", forKey: "Font Size")
         }
         
         let fontinit = UserDefaults.standard.string(forKey: "Font Family")
@@ -62,16 +67,11 @@ class MainWindow: NSViewController {
         for (_, drive) in (fileContent?.components(separatedBy: "\n").enumerated())! {
             self.pulldown_menu.menu?.addItem(withTitle: drive, action: #selector(MainWindow.menuItemClicked(_:)), keyEquivalent: "")
         }
-
-
-            
+            self.pulldown_menu.removeItem(withTitle: "")
+            }
         }
-    }
-        
      }
-        
-    
-    
+
     @IBAction func browseFile(sender: AnyObject) {
         
         let dialog = NSOpenPanel();
@@ -100,21 +100,62 @@ class MainWindow: NSViewController {
     }
     
     @IBAction func refresh_drives(_ sender: Any) {
+        self.pulldown_menu.removeAllItems()
         output_window.textStorage?.mutableString.setString("")
+            DispatchQueue.global(qos: .background).async {
+            self.syncShellExec(path: self.scriptPath, args: ["_get_drives"])
+                        
+            DispatchQueue.main.async {
+            let filePath = "/private/tmp/lenovobios/drives_pulldown"
+            if (FileManager.default.fileExists(atPath: filePath)) {
+                print("")
+            } else{
+                return
+            }
+
+            let location = NSString(string:"/private/tmp/lenovobios/drives_pulldown").expandingTildeInPath
+            let fileContent = try? NSString(contentsOfFile: location, encoding: String.Encoding.utf8.rawValue)
+            for (_, drive) in (fileContent?.components(separatedBy: "\n").enumerated())! {
+                self.pulldown_menu.menu?.addItem(withTitle: drive, action: #selector(MainWindow.menuItemClicked(_:)), keyEquivalent: "")
+            }
+               
+            }
+        }
         self.syncShellExec(path: self.scriptPath, args: ["_refresh"])
     }
         
     @objc func menuItemClicked(_ sender: NSMenuItem) {
-        self.pulldown_menu.item(withTitle: "Please select ...")?.isHidden=true
         let destination = sender.title
         UserDefaults.standard.set(destination, forKey: "Destination")
     }
 
     @IBAction func start(_ sender: Any) {
+        self.progress_wheel?.startAnimation(self);
+        self.progress_wheel.isHidden = false
+        self.button_start.isHidden = false
+        self.button_start.isEnabled = false
+        self.textfield_isopath.isEnabled = false
+        self.pulldown_menu.isEnabled = false
+        self.button_select.isEnabled = false
+        self.button_refresh.isEnabled = false
         output_window.textStorage?.mutableString.setString("")
         DispatchQueue.global(qos: .background).async {
-        self.syncShellExec(path: self.scriptPath, args: ["_write_device"])
+            self.syncShellExec(path: self.scriptPath, args: ["_write_device"])
+            DispatchQueue.main.async {
+                //self.button_start.isHidden = false
+                self.button_start.isEnabled = true
+                self.textfield_isopath.isEnabled = true
+                self.pulldown_menu.isEnabled = true
+                self.button_select.isEnabled = true
+                self.button_refresh.isEnabled = true
+                self.progress_wheel?.stopAnimation(self);
+                self.progress_wheel.isHidden = true
+            }
         }
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        print("bla")
     }
     
     func syncShellExec(path: String, args: [String] = []) {

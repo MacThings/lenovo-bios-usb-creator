@@ -2,6 +2,13 @@
 
 ScriptHome=$(echo $HOME)
 ScriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+sys_language=$( defaults read -g AppleLocale )
+
+if [[ $sys_language != de_* ]]; then
+  syslang="en"
+else
+  syslang="de"
+fi
 
 function _helpDefaultWrite()
 {
@@ -42,18 +49,33 @@ function _get_drives()
         rm "$temp_path"/volumes*
     fi
 
-    diskutil list | grep "(disk" | grep "):" | sed 's/(.*//g' > "$temp_path"/drives_pulldown
+    if [[ "$syslang" != "de" ]]; then
+      echo "Please select ..." > "$temp_path"/drives_pulldown
+    else
+      echo "Bitte selektieren ..." > "$temp_path"/drives_pulldown
+    fi
+
+    diskutil list | grep "(external" | grep "):" | sed 's/(.*//g' >> "$temp_path"/drives_pulldown
     perl -e 'truncate $ARGV[0], ((-s $ARGV[0]) - 1)' "$temp_path"/drives_pulldown  2> /dev/null
-    
+    check=$( cat "$temp_path"/drives_pulldown )
+    if [[ $check != *dev* ]]; then
+      if [[ "$syslang" != "de" ]]; then
+        echo "No suitable destination found. Make sure that you connect any USB Device to your computer."
+      else
+        echo "Kein geeignetes Ziel gefunden. Bitte stelle sicher, das ein USB Gerät mit Deinem Computer verbunden ist."
+      fi
+    fi
 }
 
 function _refresh()
 {
 
+    if [[ "$syslang" != "de" ]]; then
+      echo "Please select ..." > "$temp_path"/drives_pulldown
+    else
+      echo "Bitte selektieren ..." > "$temp_path"/drives_pulldown
+    fi
     diskutil list external
-    diskutil list | grep "(disk" | grep "):" | sed 's/(.*//g' | xargs > "$temp_path"/drives_pulldown
-    perl -e 'truncate $ARGV[0], ((-s $ARGV[0]) - 1)' "$temp_path"/drives_pulldown  2> /dev/null
-
 }
 
 function _get_isoname()
@@ -71,21 +93,45 @@ function _write_device()
     dest=$( _helpDefaultRead "Destination" |xargs )
     isopath=$( _helpDefaultRead "Isopath" )
     isoname=$( _helpDefaultRead "Isoname" )
-    
+
+
     if [[ $dest = "" ]]; then
+      if [[ "$syslang" != "de" ]]; then
+        echo "Error. Please select destination device first!"
+        exit
+      else
+        echo "Fehler. Bitte wähle erst ein Zielgerät aus!"
+        exit
+      fi
+    fi
+
+    if [[ $dest = "Please select ..." ]]; then
       echo "Error. Please select destination device first!"
       exit
     fi
-    
+ 
+    if [[ $dest = "Bitte selektieren ..." ]]; then
+      echo "Fehler. Bitte wähle erst ein Zielgerät aus!"
+      exit
+    fi
+ 
     if [[ $isopath = "" ]]; then
-      echo "Error. Please select a Lenovo .iso first!"
+      if [[ "$syslang" != "de" ]]; then
+        echo "Error. Please select a Lenovo .iso first!"
+      else
+        echo "Fehler. Bitte wähle zuerst eine Lenovo ISO Datei aus!"
+      fi
       exit
     fi
 
     strings "$isopath" |grep LenovoSecureFlash > /dev/null
     
     if [[ $? != "0" ]]; then
-      echo "Error. That seems to be a wrong or damaged ISO File!"
+      if [[ "$syslang" != "de" ]]; then
+        echo "Error. That seems to be no or a damaged Leneovo ISO File!"
+      else
+        echo "Fehler. Das scheint kein oder ein beschädigtes Lenovo ISO Image zu sein!"
+      fi
       exit
     fi
     
@@ -95,41 +141,64 @@ function _write_device()
       unzip -qo "$ScriptPath"/../Perl/perl.zip -d "$temp_path"
         if [ ! -d /usr/local/Cellar ]; then
           _helpDefaultWrite "Cellar" "No"
-          osascript -e 'do shell script "mkdir /usr/local/Cellar; cd /usr/local/Cellar; ln -s '$temp_path'/perl perl" with administrator privileges'
           cd "$ScriptPath"
         fi
+      osascript -e 'do shell script "mkdir /usr/local/Cellar; cd /usr/local/Cellar; ln -s '$temp_path'/perl perl" with administrator privileges'
     fi
     
-    echo -e "Converting $isoname"
+    if [[ "$syslang" != "de" ]]; then
+      echo -e "Converting $isoname ..."
+    else
+      echo -e "Konvertiere $isoname ..."
+    fi
 
     perl_pre=$( _helpDefaultRead "Perl" )
     if [[ "$perl_pre" = "No" ]]; then
       /usr/local/Cellar/perl/5.30.0/bin/perl "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
     else
-      perl "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
+      perl_bin=$( which perl )
+      "$perl_bin" "$ScriptPath"/geteltorito.pl -o "$temp_path"/patched.iso "$isopath"
     fi
 
     if [[ $? != "0" ]]; then
-      echo -e "An Error has occured. Try again.\n"
+      if [[ "$syslang" != "de" ]]; then
+        echo -e "An Error has occured. Try again.\n"
+      else
+        echo -e "Ein Fehler ist aufgetreten. Versuche es noch einmal.\n"
+      fi
       exit
     else
-      echo -e "Done.\n"
+      if [[ "$syslang" != "de" ]]; then
+        echo -e "Done.\n"
+      else
+        echo -e "Fertig.\n"
+      fi
     fi
 
-    echo -e "Writing $isoname to $dest"
+    if [[ "$syslang" != "de" ]]; then
+      echo -e "Writing $isoname to $dest ..."
+    else
+      echo -e "Schreibe $isoname auf $dest ..."
+    fi
 
     diskutil unmountDisk "$dest" > /dev/null
 
-    dd if="$temp_path"/patched.iso of="$dest"
+    osascript -e 'do shell script "dd if='$temp_path'/patched.iso of='$dest' bs=2m > /dev/null; hdiutil attach '$dest's1 > /dev/null" with administrator privileges'
     
     if [[ $? != "0" ]]; then
-      echo -e "An Error has occured. Try again.\n"
+      if [[ "$syslang" != "de" ]]; then
+        echo -e "An Error has occured. Try again.\n"
+      else
+        echo -e "Ein Fehler ist aufgetreten. Versuche es noch einmal.\n"
+      fi
       exit
     else
-      echo -e "Done.\n"
+      if [[ "$syslang" != "de" ]]; then
+        echo -e "Done.\n"
+      else
+        echo -e "Fertig.\n"
+      fi
     fi
-    
-    hdiutil attach "$dest"s1 > /dev/null
     
 }
 
