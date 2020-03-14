@@ -16,9 +16,6 @@
 /* Class = "NSButtonCell"; title = "Stop"; ObjectID = "51X-Ma-9z6"; */
 "51X-Ma-9z6.title" = "Stop";
 
-/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
-"aUF-d1-5bR.title" = "Fenster";
-
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Hauptmenu";
 
@@ -39,9 +36,6 @@
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "Services";
-
-/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "Fenster";
 
 /* Class = "NSButtonCell"; title = "Start"; ObjectID = "jou-7D-LvX"; */
 "jou-7D-LvX.title" = "Start";
