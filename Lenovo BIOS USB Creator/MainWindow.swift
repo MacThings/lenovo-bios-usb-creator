@@ -28,29 +28,27 @@ class MainWindow: NSViewController {
     var outputTimer: Timer?
     
     let scriptPath = Bundle.main.path(forResource: "/Script/script", ofType: "command")!
+    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        self.view.window?.title = "Lenovo BIOS USB Creator v" + appVersion!
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
 
         PFMoveToApplicationsFolderIfNecessary()
+      
+        
+        let fontsize = CGFloat(13)
+        let fontfamily = "Menlo"
+        output_window.font = NSFont(name: fontfamily, size: fontsize)
         
         self.syncShellExec(path: self.scriptPath, args: ["_initial"])
         
-        let fontsizeinit = UserDefaults.standard.string(forKey: "Font Size")
-        if fontsizeinit == nil{
-            UserDefaults.standard.set("11", forKey: "Font Size")
-        }
-        
-        let fontinit = UserDefaults.standard.string(forKey: "Font Family")
-        if fontinit == nil{
-            UserDefaults.standard.set("Courier", forKey: "Font Family")
-        }
-        
-        let fontpt = CGFloat(UserDefaults.standard.float(forKey: "Font Size"))
-        let fontfam = UserDefaults.standard.string(forKey: "Font Family")
-        
-        output_window.font = NSFont(name: fontfam!, size: fontpt)
         DispatchQueue.global(qos: .background).async {
         self.syncShellExec(path: self.scriptPath, args: ["_get_drives"])
                     
