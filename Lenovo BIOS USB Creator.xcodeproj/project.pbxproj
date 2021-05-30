@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74E9FC2418F6040098FD34 /* geteltorito.pl */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A74EA042418FEE00098FD34 /* script.command in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74EA022418FECB0098FD34 /* script.command */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A74EA0924191FF10098FD34 /* perl.zip in Copy Perl Bundle */ = {isa = PBXBuildFile; fileRef = 2A74EA0624191FD20098FD34 /* perl.zip */; };
+		2AF4FEBF266446AA008C3831 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AF4FEBE266446AA008C3831 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,11 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B4129CDDBC9569CF1455257 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lenovo BIOS USB Creator.debug.xcconfig"; path = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.debug.xcconfig"; sourceTree = "<group>"; };
 		2A2B8EE526644004005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2B8EE92664401C005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2B8EFC266441BE005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A2B8F052664420E005E3BD2 /* Pods_Lenovo_BIOS_USB_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Lenovo_BIOS_USB_Creator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5D7702241CCE7300F533C0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2A5D7703241CF2B400F533C0 /* lenovobiosusbcreator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = lenovobiosusbcreator.html; path = "Lenovo BIOS USB Creator/lenovobiosusbcreator.html"; sourceTree = "<group>"; };
 		2A74E9E32418ECD00098FD34 /* Lenovo BIOS USB Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lenovo BIOS USB Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +61,6 @@
 		2A74E9FC2418F6040098FD34 /* geteltorito.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = geteltorito.pl; sourceTree = "<group>"; };
 		2A74EA022418FECB0098FD34 /* script.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = script.command; sourceTree = "<group>"; };
 		2A74EA0624191FD20098FD34 /* perl.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = perl.zip; sourceTree = "<group>"; };
-		5FBE37B77DC88B292D9BC7F0 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lenovo BIOS USB Creator.release.xcconfig"; path = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.release.xcconfig"; sourceTree = "<group>"; };
-		94634E03BBC8429BC107A149 /* Pods_Lenovo_BIOS_USB_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lenovo_BIOS_USB_Creator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF4FEBF266446AA008C3831 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +81,6 @@
 				2A74E9E52418ECD00098FD34 /* Lenovo BIOS USB Creator */,
 				2A74E9E42418ECD00098FD34 /* Products */,
 				2A5D7703241CF2B400F533C0 /* lenovobiosusbcreator.html */,
-				BED84F3980EE55E6BC3784F6 /* Pods */,
 				999FA46A06CC48CA936A15A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -132,22 +129,11 @@
 		999FA46A06CC48CA936A15A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A2B8F052664420E005E3BD2 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
 				2A2B8EFC266441BE005E3BD2 /* LetsMove.framework */,
 				2A2B8EE92664401C005E3BD2 /* LetsMove.framework */,
 				2A2B8EE526644004005E3BD2 /* LetsMove.framework */,
-				94634E03BBC8429BC107A149 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BED84F3980EE55E6BC3784F6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1B4129CDDBC9569CF1455257 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */,
-				5FBE37B77DC88B292D9BC7F0 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +143,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A74E9F32418ECD50098FD34 /* Build configuration list for PBXNativeTarget "Lenovo BIOS USB Creator" */;
 			buildPhases = (
-				1307B1C38092B328F223B813 /* [CP] Check Pods Manifest.lock */,
 				2A74E9DF2418ECD00098FD34 /* Sources */,
 				2A74E9E02418ECD00098FD34 /* Frameworks */,
 				2A74E9E12418ECD00098FD34 /* Resources */,
-				647702340415A787D401D2D0 /* [CP] Embed Pods Frameworks */,
 				2A74E9FA2418F5E20098FD34 /* Copy Py-Script (2 items) */,
 				2A74EA0824191FE00098FD34 /* Copy Perl Bundle */,
 				2A74E9FF2418F8430098FD34 /* ShellScript */,
@@ -171,6 +155,9 @@
 			dependencies = (
 			);
 			name = "Lenovo BIOS USB Creator";
+			packageProductDependencies = (
+				2AF4FEBE266446AA008C3831 /* Sparkle */,
+			);
 			productName = "Lenovo BIOS USB Creator";
 			productReference = 2A74E9E32418ECD00098FD34 /* Lenovo BIOS USB Creator.app */;
 			productType = "com.apple.product-type.application";
@@ -200,6 +187,9 @@
 				de,
 			);
 			mainGroup = 2A74E9DA2418ECD00098FD34;
+			packageReferences = (
+				2AF4FEBD266446AA008C3831 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 2A74E9E42418ECD00098FD34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,28 +212,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1307B1C38092B328F223B813 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lenovo BIOS USB Creator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2A74E9FF2418F8430098FD34 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,23 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Lenovo\\ BIOS\\ USB\\ Creator.app\ncp -r \"${TARGET_BUILD_DIR}\"/Lenovo\\ BIOS\\ USB\\ Creator.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/lenovobiosusbcreator ]; then\ncp \"/Users/luigi/Documents/Xcode/lenovobiosusbcreator/Lenovo BIOS USB Creator/lenovobiosusbcreator.html\" \"/Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.html\"\nrm /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Lenovo\\ BIOS\\ USB\\ Creator.app /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip\nfi\n";
-		};
-		647702340415A787D401D2D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -424,7 +375,6 @@
 		};
 		2A74E9F42418ECD50098FD34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B4129CDDBC9569CF1455257 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lenovo BIOS USB Creator/Lenovo_BIOS_USB_Creator.entitlements";
@@ -450,7 +400,6 @@
 		};
 		2A74E9F52418ECD50098FD34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FBE37B77DC88B292D9BC7F0 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lenovo BIOS USB Creator/Lenovo_BIOS_USB_Creator.entitlements";
@@ -496,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AF4FEBD266446AA008C3831 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AF4FEBE266446AA008C3831 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AF4FEBD266446AA008C3831 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A74E9DB2418ECD00098FD34 /* Project object */;
 }
