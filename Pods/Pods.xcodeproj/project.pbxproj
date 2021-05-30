@@ -20,53 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		023E3D21CC8D2E87E2F479E2C6765B30 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D1B0CD45CB467152AFBFBC25D74723F5 /* it.lproj */; };
-		04C0D085186241DF14CEF3D3C9542715 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A781FF6198045A3A49C28610FDFF94D6 /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		080FA5E1CA53FD0A5BA021C3AD77816F /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 64AA74176D197E192717481AFBA0A3B9 /* ko.lproj */; };
-		125EB98E1BD49593E14A9EE775D4BFCB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		19452903148D2F3AE019248C4B0025A3 /* LetsMove.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FC6B13D2EEBAE69331072C72C8E1E4 /* LetsMove.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1F1729AE98DEE085CBB5DBF7E544DE3D /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D208C0A422E22D5171D8FE97E41BE /* nb.lproj */; };
-		202DC4BA29D222679D2A7ECA0144577D /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 795952499D365896A10121AA7810D8C3 /* sk.lproj */; };
-		2731AA1508A7DEDBD872D5C4CE8DDBA9 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 081D33073F9E95904E911179055C0FA8 /* de.lproj */; };
-		315F2758746A6A4FA2C4FE654F413CC5 /* Pods-Lenovo BIOS USB Creator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC60725EDB0CA091315C5FA8FE3D5E8 /* Pods-Lenovo BIOS USB Creator-dummy.m */; };
-		4649D0449DD19A141C9534BC01934393 /* vi-VN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB64117419C071D80EFF75A40A6D83 /* vi-VN.lproj */; };
-		468BCCD05D888722E87FC519D8F7D42A /* PFMoveApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = A75F301246678F31DA36115732A7C5C6 /* PFMoveApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48F291AF33B727F25E4FD0AE16343F9B /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2335AC7D9F4D8559CFEF00E448EA5AAA /* ja.lproj */; };
-		54B1C3494BD5E01863DF5036BBE00571 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 74421BEABD13A9A77D5ADE60FC908BB8 /* tr.lproj */; };
-		681FEF943598C5C6655A7CA51773322F /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CA6E68224EF9B21CA466EE78768C98E7 /* fr.lproj */; };
-		692A775824953AC6B6623AA88AC03B41 /* sr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6086B7809209536C77844352088E3293 /* sr.lproj */; };
-		70DA5544474AA59D671B8C135C4CE3B1 /* pt_BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 28435BEA4BD8A4741837FD2E6F62834E /* pt_BR.lproj */; };
-		75324A030A4959F5B1440809DFE09A6E /* LetsMove-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650D7D76BD1776D18C31845DB30ADF79 /* LetsMove-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AF8953DFF2B20A4F5CCDCAB9EC8891D /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0E515F9810199C5486A9C2A60D9CCE54 /* ru.lproj */; };
-		7C96507EE4541D043E20022D198E85EE /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F49B53D4AD4A6BC4F3A5FF1318D8179D /* Base.lproj */; };
-		810BE920769E5DB0D3A03507FCBD73F2 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 90ED621D77F6F2823604B6F464FE612E /* hu.lproj */; };
-		86197134C9088D33917A908A3E6C7D7C /* zh_TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 79D13BA18FCF4C9DAE7E94A480D3A5B4 /* zh_TW.lproj */; };
-		865184FB080C3D31F00EDB0211BB40E3 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 23B075DDD0F9BAFF9D21E6B050C13579 /* pt.lproj */; };
-		88434790D9B263071AE209138C441DE1 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CA8585C20324EBF35948395E714920B1 /* pl.lproj */; };
-		8B587B3E7D37E341BC611DA4067E44B2 /* LetsMove-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6D5670FA9D33C90AFCB6F419D64A2 /* LetsMove-dummy.m */; };
-		925C8C1BC8AD223B5A368E864FB7B6AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		9636A0B3831B609C25D86DAD8E5286B3 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E9CC2CAD4B5A78D742DBBF1E604D6E99 /* nl.lproj */; };
-		9B5D5E0819693F46D370B29D9ACAA76D /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2F12ADDD02C6B6FC8F0303D056BE37A4 /* es.lproj */; };
-		A5E5E7F4F922A5B5F738764721E2E1A5 /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB21BE60827A283C005AB4B3B3F834FC /* ca.lproj */; };
-		AEC686DD1A0E845708DD8BEC1CF50A59 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9D9AE4B76FE337A633FFCF99D1669989 /* en.lproj */; };
-		B1BC9D510A64162E038CFC628DCC0EEB /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6213523008F14B8775920931F903C229 /* cs.lproj */; };
-		BE5D5C6FBD761D5606C80E17C67E4BD5 /* Pods-Lenovo BIOS USB Creator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEADDBE50204BFA67BFB6D9F0657C00F /* Pods-Lenovo BIOS USB Creator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D04A82440E590EFD82B9B890B1351DC7 /* zh_CN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 792B0881B83A347CCD4CE0F609B017BD /* zh_CN.lproj */; };
-		E46713430FBC68FDD3DD236FF5BD79AA /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8A176C6BB95AF5241AD02C5D17BE9A52 /* sv.lproj */; };
-		F66CFD12E41C521C884BE91313311B46 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9C7FA0ECA09F5EDACA916EE9E0223172 /* el.lproj */; };
-		F773679B34767DC58E9D234C8DC19849 /* mk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0E98150DCD71E059AD5F4881C4C9B09C /* mk.lproj */; };
-		FF97F650F78A91AE303ABE1CF701B8EB /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 98DE6BC024A004410AD84E1112F75A8B /* da.lproj */; };
+		1F764C7815266520932E3F661E3F72EB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		205723FBB8E47D0FEBEF2CE69EDEF3A0 /* Pods-Lenovo BIOS USB Creator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEADDBE50204BFA67BFB6D9F0657C00F /* Pods-Lenovo BIOS USB Creator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A597D0945E637C927FB7A42913623CC /* Pods-Lenovo BIOS USB Creator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC60725EDB0CA091315C5FA8FE3D5E8 /* Pods-Lenovo BIOS USB Creator-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4924EBB206E6A07B8F024FCE4E12D68D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F83960005EA88D0C24A1D277DD0E8667;
-			remoteInfo = LetsMove;
-		};
-		A3FD76F8AD7D4B26B6A5E7201F2314FC /* PBXContainerItemProxy */ = {
+		A24047A2049DFF47548605DC3D00AC53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -77,222 +37,77 @@
 
 /* Begin PBXFileReference section */
 		021056621ACFC97912FEFE54E2F33412 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lenovo BIOS USB Creator.debug.xcconfig"; sourceTree = "<group>"; };
-		081D33073F9E95904E911179055C0FA8 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
-		0E515F9810199C5486A9C2A60D9CCE54 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
-		0E98150DCD71E059AD5F4881C4C9B09C /* mk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = mk.lproj; sourceTree = "<group>"; };
 		0F752F5DD6DA8FB90607E69945B330B7 /* Pods_Lenovo_BIOS_USB_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lenovo_BIOS_USB_Creator.framework; path = "Pods-Lenovo BIOS USB Creator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18F6D5670FA9D33C90AFCB6F419D64A2 /* LetsMove-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetsMove-dummy.m"; sourceTree = "<group>"; };
+		0FA6C315CC39C04A6325D6C2EA0183AE /* SPUURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUURLRequest.h; path = Sparkle.framework/Versions/A/Headers/SPUURLRequest.h; sourceTree = "<group>"; };
 		1BC60725EDB0CA091315C5FA8FE3D5E8 /* Pods-Lenovo BIOS USB Creator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lenovo BIOS USB Creator-dummy.m"; sourceTree = "<group>"; };
-		1CAB64117419C071D80EFF75A40A6D83 /* vi-VN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "vi-VN.lproj"; sourceTree = "<group>"; };
-		1DDFFFBE4CC78E57434F3033AE0F9ACB /* Sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sparkle.release.xcconfig; sourceTree = "<group>"; };
-		2335AC7D9F4D8559CFEF00E448EA5AAA /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
-		23B075DDD0F9BAFF9D21E6B050C13579 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
-		23DF6E58E3A37BEA48879DE61A9CD966 /* LetsMove-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LetsMove-Info.plist"; sourceTree = "<group>"; };
-		28435BEA4BD8A4741837FD2E6F62834E /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt_BR.lproj; sourceTree = "<group>"; };
-		2B1D208C0A422E22D5171D8FE97E41BE /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
-		2F12ADDD02C6B6FC8F0303D056BE37A4 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
-		310B2E2A95EFF19BD89C150E551E0BE7 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
-		38FAF65F9C53B6321C6F06F3A8AB613E /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
-		3BF7EE1FCBD753C9E500CCE29563CA4E /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
+		1E5E81070AEE122E1F275B71DB14E3D7 /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
+		21DF7D1A6661B3857DEFB225AE0F9F57 /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
 		3D406BF1C8649563EDCE2B70D2C47E92 /* Pods-Lenovo BIOS USB Creator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lenovo BIOS USB Creator-frameworks.sh"; sourceTree = "<group>"; };
 		402578EB1FBF9ECE5A18C1B4FF087CD2 /* Pods-Lenovo BIOS USB Creator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Lenovo BIOS USB Creator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4233C80F3A15BE308BF682785290FD66 /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
-		5DCD058408CD14999146C73DCF9711C7 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		6086B7809209536C77844352088E3293 /* sr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sr.lproj; sourceTree = "<group>"; };
-		6213523008F14B8775920931F903C229 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
-		62731EAE94D0918E350670E2A1B1E749 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
-		64AA74176D197E192717481AFBA0A3B9 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
-		650D7D76BD1776D18C31845DB30ADF79 /* LetsMove-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-umbrella.h"; sourceTree = "<group>"; };
-		6A8DD68EDDE07B9CC95A9115CCDE8911 /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
+		417C88C51B3BE16948654F2FCB66EB2E /* SUCodeSigningVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUCodeSigningVerifier.h; path = Sparkle.framework/Versions/A/Headers/SUCodeSigningVerifier.h; sourceTree = "<group>"; };
+		41B59738C0BCF0042F3713929FCF7B7D /* Sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sparkle.debug.xcconfig; sourceTree = "<group>"; };
+		47C03DB72D276BED7D2C4894868BA0D7 /* SPUDownloadData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloadData.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloadData.h; sourceTree = "<group>"; };
 		6C4AD40B77D8104A21BCA44832D1832A /* Pods-Lenovo BIOS USB Creator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lenovo BIOS USB Creator-acknowledgements.plist"; sourceTree = "<group>"; };
-		74421BEABD13A9A77D5ADE60FC908BB8 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
-		74B609B4F3326D26956FB19490CDBC8C /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
-		792B0881B83A347CCD4CE0F609B017BD /* zh_CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_CN.lproj; sourceTree = "<group>"; };
-		795952499D365896A10121AA7810D8C3 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
-		79D13BA18FCF4C9DAE7E94A480D3A5B4 /* zh_TW.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_TW.lproj; sourceTree = "<group>"; };
-		7FD8E57069544F46145601BD75DAE10C /* SPUDownloaderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderProtocol.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderProtocol.h; sourceTree = "<group>"; };
-		8304F0FF9FFA2DBB854310C2C1424F8A /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
-		86DE2224BE3FBEB438D59ED0E8B54BFC /* LetsMove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetsMove.debug.xcconfig; sourceTree = "<group>"; };
-		8A176C6BB95AF5241AD02C5D17BE9A52 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
-		90ED621D77F6F2823604B6F464FE612E /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
-		958C635EB184B846D881B989390FA100 /* SPUURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUURLRequest.h; path = Sparkle.framework/Versions/A/Headers/SPUURLRequest.h; sourceTree = "<group>"; };
-		98DE6BC024A004410AD84E1112F75A8B /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
-		9C7FA0ECA09F5EDACA916EE9E0223172 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = el.lproj; sourceTree = "<group>"; };
+		76CFF7FAE80F347862737AE6269F7628 /* Sparkle-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Sparkle-copy-dsyms.sh"; sourceTree = "<group>"; };
+		787B488EE9EF857E94CEF6672C97EF62 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
+		8D39ABBEF76CF8A84E6F2C1AACCDCB19 /* SPUDownloaderSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderSession.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderSession.h; sourceTree = "<group>"; };
+		9C51D500C5AF818BF538AF18D0D86B3A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		9D35C631A7581BD57A71651785354937 /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D9AE4B76FE337A633FFCF99D1669989 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
-		A75F301246678F31DA36115732A7C5C6 /* PFMoveApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		A781FF6198045A3A49C28610FDFF94D6 /* PFMoveApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
-		AA600BC2072E41830AF01C30CBD1350C /* SPUDownloaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderDelegate.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderDelegate.h; sourceTree = "<group>"; };
-		B273A27CEBCD84258992A69A43EB7AA7 /* LetsMove.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LetsMove.modulemap; sourceTree = "<group>"; };
-		B3FC6B13D2EEBAE69331072C72C8E1E4 /* LetsMove.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LetsMove.h; sourceTree = "<group>"; };
-		B40238BEBC114ABF671756C00BE370AC /* Sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sparkle.debug.xcconfig; sourceTree = "<group>"; };
+		9E1AD7D07431A286629E6BEEEA51EB77 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
+		B217038D7B712A7655CBB0518096B093 /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
+		B825F0C0073E24520520B5F3CCB0E3C1 /* SPUDownloaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderDelegate.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderDelegate.h; sourceTree = "<group>"; };
 		B870B99EAD9B970F684919996CB9D974 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lenovo BIOS USB Creator.release.xcconfig"; sourceTree = "<group>"; };
-		BBAA3CBEBA1627100C08CB075C15CE9C /* SPUDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloader.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloader.h; sourceTree = "<group>"; };
+		BC1FF2D9890C3E7DB54A0213202EAB1A /* SPUDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloader.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloader.h; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		C702BDF411D703520705E3AE64A133B9 /* SUCodeSigningVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUCodeSigningVerifier.h; path = Sparkle.framework/Versions/A/Headers/SUCodeSigningVerifier.h; sourceTree = "<group>"; };
-		CA6E68224EF9B21CA466EE78768C98E7 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
-		CA8585C20324EBF35948395E714920B1 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
-		CDEA76D5F1ECA2C01717200CE1CD9A5A /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
+		C1F617395A6F92CDD3356A6FC6F15D4F /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
+		C60F88046BF1A979D0BC9E7C1F0B00B1 /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
+		CD9899C66FC40CC2CEDDAC1865C31E1B /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
 		CF322C89016D339B8F5581A1141617C5 /* Pods-Lenovo BIOS USB Creator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lenovo BIOS USB Creator-Info.plist"; sourceTree = "<group>"; };
-		D046B168BD5AE6114628CFF71D1DC058 /* SPUDownloadData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloadData.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloadData.h; sourceTree = "<group>"; };
-		D1B0CD45CB467152AFBFBC25D74723F5 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
-		D87AC91B19D0A6B161BD3ED08F81D6E9 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetsMove.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB47E517E7D652C61AD77E4C19C6134A /* LetsMove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetsMove.release.xcconfig; sourceTree = "<group>"; };
-		E3C37E1E7AB21219B5C5879BE3CD5A68 /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
-		E6E374A5F59D8DFE06F593DCB5470D96 /* Sparkle-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Sparkle-copy-dsyms.sh"; sourceTree = "<group>"; };
-		E87451B66CBE48D4463E013292A8271D /* LetsMove-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-prefix.pch"; sourceTree = "<group>"; };
-		E9CC2CAD4B5A78D742DBBF1E604D6E99 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
-		EB21BE60827A283C005AB4B3B3F834FC /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
-		F1A339523F5D86288A38A7BE0B4289CE /* SPUDownloaderSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderSession.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderSession.h; sourceTree = "<group>"; };
-		F49B53D4AD4A6BC4F3A5FF1318D8179D /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = Base.lproj; sourceTree = "<group>"; };
 		F955C105A672275AA84194B4EC9F30A1 /* Pods-Lenovo BIOS USB Creator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Lenovo BIOS USB Creator.modulemap"; sourceTree = "<group>"; };
+		FA7CB0E555617928B4851C18596C8956 /* SPUDownloaderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderProtocol.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderProtocol.h; sourceTree = "<group>"; };
+		FC9050852DC5DAC3FBA159FEAF5D9914 /* Sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sparkle.release.xcconfig; sourceTree = "<group>"; };
 		FEADDBE50204BFA67BFB6D9F0657C00F /* Pods-Lenovo BIOS USB Creator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lenovo BIOS USB Creator-umbrella.h"; sourceTree = "<group>"; };
+		FFFDD30491C8F42CB506FC77969DAC9D /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A2687BA2342C630CAF879116BDC47B5 /* Frameworks */ = {
+		5683CC70DA49050E40B306ADCAA794C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125EB98E1BD49593E14A9EE775D4BFCB /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B460FC054A329C4D27C707337E4F424 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				925C8C1BC8AD223B5A368E864FB7B6AF /* Cocoa.framework in Frameworks */,
+				1F764C7815266520932E3F661E3F72EB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		253A0712096A0DC4335EF0FFAB82034E /* Pods */ = {
+		0158964EF082911E5F65CA6796078282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				513AB4E6E9357AEBEC31C0F4E540F7F8 /* LetsMove */,
-				34768EFFDE8ACC2B6507173F4BC25E16 /* Sparkle */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		34768EFFDE8ACC2B6507173F4BC25E16 /* Sparkle */ = {
-			isa = PBXGroup;
-			children = (
-				6A8DD68EDDE07B9CC95A9115CCDE8911 /* Sparkle.h */,
-				D046B168BD5AE6114628CFF71D1DC058 /* SPUDownloadData.h */,
-				BBAA3CBEBA1627100C08CB075C15CE9C /* SPUDownloader.h */,
-				AA600BC2072E41830AF01C30CBD1350C /* SPUDownloaderDelegate.h */,
-				7FD8E57069544F46145601BD75DAE10C /* SPUDownloaderProtocol.h */,
-				F1A339523F5D86288A38A7BE0B4289CE /* SPUDownloaderSession.h */,
-				958C635EB184B846D881B989390FA100 /* SPUURLRequest.h */,
-				310B2E2A95EFF19BD89C150E551E0BE7 /* SUAppcast.h */,
-				38FAF65F9C53B6321C6F06F3A8AB613E /* SUAppcastItem.h */,
-				C702BDF411D703520705E3AE64A133B9 /* SUCodeSigningVerifier.h */,
-				74B609B4F3326D26956FB19490CDBC8C /* SUErrors.h */,
-				8304F0FF9FFA2DBB854310C2C1424F8A /* SUExport.h */,
-				3BF7EE1FCBD753C9E500CCE29563CA4E /* SUStandardVersionComparator.h */,
-				62731EAE94D0918E350670E2A1B1E749 /* SUUpdater.h */,
-				E3C37E1E7AB21219B5C5879BE3CD5A68 /* SUUpdaterDelegate.h */,
-				4233C80F3A15BE308BF682785290FD66 /* SUVersionComparisonProtocol.h */,
-				CDEA76D5F1ECA2C01717200CE1CD9A5A /* SUVersionDisplayProtocol.h */,
-				A71EA143437FD430696B5261F867954F /* Frameworks */,
-				A7FB2A2E090E69A860B6EE9E7BE2FE17 /* Support Files */,
-			);
-			name = Sparkle;
-			path = Sparkle;
-			sourceTree = "<group>";
-		};
-		513AB4E6E9357AEBEC31C0F4E540F7F8 /* LetsMove */ = {
-			isa = PBXGroup;
-			children = (
-				B3FC6B13D2EEBAE69331072C72C8E1E4 /* LetsMove.h */,
-				A75F301246678F31DA36115732A7C5C6 /* PFMoveApplication.h */,
-				A781FF6198045A3A49C28610FDFF94D6 /* PFMoveApplication.m */,
-				A211C720559A6C804E640773595A8380 /* Resources */,
-				8DA420DB188BB39274DC142FC9158136 /* Support Files */,
-			);
-			name = LetsMove;
-			path = LetsMove;
-			sourceTree = "<group>";
-		};
-		551BBAE0499B396BA6FFA1D5FA92CF68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D87AC91B19D0A6B161BD3ED08F81D6E9 /* LetsMove.framework */,
-				0F752F5DD6DA8FB90607E69945B330B7 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8DA420DB188BB39274DC142FC9158136 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B273A27CEBCD84258992A69A43EB7AA7 /* LetsMove.modulemap */,
-				18F6D5670FA9D33C90AFCB6F419D64A2 /* LetsMove-dummy.m */,
-				23DF6E58E3A37BEA48879DE61A9CD966 /* LetsMove-Info.plist */,
-				E87451B66CBE48D4463E013292A8271D /* LetsMove-prefix.pch */,
-				650D7D76BD1776D18C31845DB30ADF79 /* LetsMove-umbrella.h */,
-				86DE2224BE3FBEB438D59ED0E8B54BFC /* LetsMove.debug.xcconfig */,
-				DB47E517E7D652C61AD77E4C19C6134A /* LetsMove.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LetsMove";
-			sourceTree = "<group>";
-		};
-		A211C720559A6C804E640773595A8380 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F49B53D4AD4A6BC4F3A5FF1318D8179D /* Base.lproj */,
-				EB21BE60827A283C005AB4B3B3F834FC /* ca.lproj */,
-				6213523008F14B8775920931F903C229 /* cs.lproj */,
-				98DE6BC024A004410AD84E1112F75A8B /* da.lproj */,
-				081D33073F9E95904E911179055C0FA8 /* de.lproj */,
-				9C7FA0ECA09F5EDACA916EE9E0223172 /* el.lproj */,
-				9D9AE4B76FE337A633FFCF99D1669989 /* en.lproj */,
-				2F12ADDD02C6B6FC8F0303D056BE37A4 /* es.lproj */,
-				CA6E68224EF9B21CA466EE78768C98E7 /* fr.lproj */,
-				90ED621D77F6F2823604B6F464FE612E /* hu.lproj */,
-				D1B0CD45CB467152AFBFBC25D74723F5 /* it.lproj */,
-				2335AC7D9F4D8559CFEF00E448EA5AAA /* ja.lproj */,
-				64AA74176D197E192717481AFBA0A3B9 /* ko.lproj */,
-				0E98150DCD71E059AD5F4881C4C9B09C /* mk.lproj */,
-				2B1D208C0A422E22D5171D8FE97E41BE /* nb.lproj */,
-				E9CC2CAD4B5A78D742DBBF1E604D6E99 /* nl.lproj */,
-				CA8585C20324EBF35948395E714920B1 /* pl.lproj */,
-				23B075DDD0F9BAFF9D21E6B050C13579 /* pt.lproj */,
-				28435BEA4BD8A4741837FD2E6F62834E /* pt_BR.lproj */,
-				0E515F9810199C5486A9C2A60D9CCE54 /* ru.lproj */,
-				795952499D365896A10121AA7810D8C3 /* sk.lproj */,
-				6086B7809209536C77844352088E3293 /* sr.lproj */,
-				8A176C6BB95AF5241AD02C5D17BE9A52 /* sv.lproj */,
-				74421BEABD13A9A77D5ADE60FC908BB8 /* tr.lproj */,
-				1CAB64117419C071D80EFF75A40A6D83 /* vi-VN.lproj */,
-				792B0881B83A347CCD4CE0F609B017BD /* zh_CN.lproj */,
-				79D13BA18FCF4C9DAE7E94A480D3A5B4 /* zh_TW.lproj */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A71EA143437FD430696B5261F867954F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5DCD058408CD14999146C73DCF9711C7 /* Sparkle.framework */,
+				9C51D500C5AF818BF538AF18D0D86B3A /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A7FB2A2E090E69A860B6EE9E7BE2FE17 /* Support Files */ = {
+		69953E9B818D813AF298B9DCEC3D8B55 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E6E374A5F59D8DFE06F593DCB5470D96 /* Sparkle-copy-dsyms.sh */,
-				B40238BEBC114ABF671756C00BE370AC /* Sparkle.debug.xcconfig */,
-				1DDFFFBE4CC78E57434F3033AE0F9ACB /* Sparkle.release.xcconfig */,
+				76CFF7FAE80F347862737AE6269F7628 /* Sparkle-copy-dsyms.sh */,
+				41B59738C0BCF0042F3713929FCF7B7D /* Sparkle.debug.xcconfig */,
+				FC9050852DC5DAC3FBA159FEAF5D9914 /* Sparkle.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Sparkle";
+			sourceTree = "<group>";
+		};
+		79C52F67EF122FA1365E0CBC92B4B05F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDF6C56D29DFCD6A812A937FB3B9516F /* Sparkle */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AC5F9165D0E54BC8A6B789FFE4F5E416 /* Pods-Lenovo BIOS USB Creator */ = {
@@ -312,13 +127,48 @@
 			path = "Target Support Files/Pods-Lenovo BIOS USB Creator";
 			sourceTree = "<group>";
 		};
+		B810D53A71E232ADF4FEFF530ADB3965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F752F5DD6DA8FB90607E69945B330B7 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDF6C56D29DFCD6A812A937FB3B9516F /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				21DF7D1A6661B3857DEFB225AE0F9F57 /* Sparkle.h */,
+				47C03DB72D276BED7D2C4894868BA0D7 /* SPUDownloadData.h */,
+				BC1FF2D9890C3E7DB54A0213202EAB1A /* SPUDownloader.h */,
+				B825F0C0073E24520520B5F3CCB0E3C1 /* SPUDownloaderDelegate.h */,
+				FA7CB0E555617928B4851C18596C8956 /* SPUDownloaderProtocol.h */,
+				8D39ABBEF76CF8A84E6F2C1AACCDCB19 /* SPUDownloaderSession.h */,
+				0FA6C315CC39C04A6325D6C2EA0183AE /* SPUURLRequest.h */,
+				9E1AD7D07431A286629E6BEEEA51EB77 /* SUAppcast.h */,
+				CD9899C66FC40CC2CEDDAC1865C31E1B /* SUAppcastItem.h */,
+				417C88C51B3BE16948654F2FCB66EB2E /* SUCodeSigningVerifier.h */,
+				9D35C631A7581BD57A71651785354937 /* SUErrors.h */,
+				1E5E81070AEE122E1F275B71DB14E3D7 /* SUExport.h */,
+				FFFDD30491C8F42CB506FC77969DAC9D /* SUStandardVersionComparator.h */,
+				787B488EE9EF857E94CEF6672C97EF62 /* SUUpdater.h */,
+				C60F88046BF1A979D0BC9E7C1F0B00B1 /* SUUpdaterDelegate.h */,
+				B217038D7B712A7655CBB0518096B093 /* SUVersionComparisonProtocol.h */,
+				C1F617395A6F92CDD3356A6FC6F15D4F /* SUVersionDisplayProtocol.h */,
+				0158964EF082911E5F65CA6796078282 /* Frameworks */,
+				69953E9B818D813AF298B9DCEC3D8B55 /* Support Files */,
+			);
+			name = Sparkle;
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
-				253A0712096A0DC4335EF0FFAB82034E /* Pods */,
-				551BBAE0499B396BA6FFA1D5FA92CF68 /* Products */,
+				79C52F67EF122FA1365E0CBC92B4B05F /* Pods */,
+				B810D53A71E232ADF4FEFF530ADB3965 /* Products */,
 				FE53C37F0B5A849DD1442D6174E82922 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -350,21 +200,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		926DA2A14CAC2B1C677F0FD08AA0E92D /* Headers */ = {
+		AC6888BDB382FB31E5B94E64B8196DA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5D5C6FBD761D5606C80E17C67E4BD5 /* Pods-Lenovo BIOS USB Creator-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		980E5919A01E7A2D85BB2B55FB6B0558 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75324A030A4959F5B1440809DFE09A6E /* LetsMove-umbrella.h in Headers */,
-				19452903148D2F3AE019248C4B0025A3 /* LetsMove.h in Headers */,
-				468BCCD05D888722E87FC519D8F7D42A /* PFMoveApplication.h in Headers */,
+				205723FBB8E47D0FEBEF2CE69EDEF3A0 /* Pods-Lenovo BIOS USB Creator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,40 +213,21 @@
 /* Begin PBXNativeTarget section */
 		CBCAD745D0ACF7062EB33BB0B591B6C6 /* Pods-Lenovo BIOS USB Creator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CB59C53311F01AAA5AC0E0CC7DC48E8 /* Build configuration list for PBXNativeTarget "Pods-Lenovo BIOS USB Creator" */;
+			buildConfigurationList = 9F22401F7A3D4998C2D9F161F1B38370 /* Build configuration list for PBXNativeTarget "Pods-Lenovo BIOS USB Creator" */;
 			buildPhases = (
-				926DA2A14CAC2B1C677F0FD08AA0E92D /* Headers */,
-				0BF903C30439E09EF0988661656A1ED7 /* Sources */,
-				6B460FC054A329C4D27C707337E4F424 /* Frameworks */,
-				A922CC6299B24ACC4BF450C412BBFCCD /* Resources */,
+				AC6888BDB382FB31E5B94E64B8196DA6 /* Headers */,
+				96EE16D7E49F9D41FEE252E7F9E701F8 /* Sources */,
+				5683CC70DA49050E40B306ADCAA794C2 /* Frameworks */,
+				00020AB26DCCDCD67A3AC24BD15FE71B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F6BA492FCF15CA6B29DAE71019201101 /* PBXTargetDependency */,
-				FE70BCEB0D8FF0F3055E3422B8CEF1B2 /* PBXTargetDependency */,
+				8F801C5F41B7B7271D37F81BB726D446 /* PBXTargetDependency */,
 			);
 			name = "Pods-Lenovo BIOS USB Creator";
 			productName = "Pods-Lenovo BIOS USB Creator";
 			productReference = 0F752F5DD6DA8FB90607E69945B330B7 /* Pods_Lenovo_BIOS_USB_Creator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F83960005EA88D0C24A1D277DD0E8667 /* LetsMove */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 20EE4026366387BA099377F69A4776C7 /* Build configuration list for PBXNativeTarget "LetsMove" */;
-			buildPhases = (
-				980E5919A01E7A2D85BB2B55FB6B0558 /* Headers */,
-				B1988B8A81F245C4F3C155A948636CA3 /* Sources */,
-				1A2687BA2342C630CAF879116BDC47B5 /* Frameworks */,
-				96A3FE8F6D569D1FB906DE877F8A32EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LetsMove;
-			productName = LetsMove;
-			productReference = D87AC91B19D0A6B161BD3ED08F81D6E9 /* LetsMove.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -427,11 +248,10 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 551BBAE0499B396BA6FFA1D5FA92CF68 /* Products */;
+			productRefGroup = B810D53A71E232ADF4FEFF530ADB3965 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F83960005EA88D0C24A1D277DD0E8667 /* LetsMove */,
 				CBCAD745D0ACF7062EB33BB0B591B6C6 /* Pods-Lenovo BIOS USB Creator */,
 				ED77B4B88587C894E85C361023D67C53 /* Sparkle */,
 			);
@@ -439,41 +259,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		96A3FE8F6D569D1FB906DE877F8A32EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C96507EE4541D043E20022D198E85EE /* Base.lproj in Resources */,
-				A5E5E7F4F922A5B5F738764721E2E1A5 /* ca.lproj in Resources */,
-				B1BC9D510A64162E038CFC628DCC0EEB /* cs.lproj in Resources */,
-				FF97F650F78A91AE303ABE1CF701B8EB /* da.lproj in Resources */,
-				2731AA1508A7DEDBD872D5C4CE8DDBA9 /* de.lproj in Resources */,
-				F66CFD12E41C521C884BE91313311B46 /* el.lproj in Resources */,
-				AEC686DD1A0E845708DD8BEC1CF50A59 /* en.lproj in Resources */,
-				9B5D5E0819693F46D370B29D9ACAA76D /* es.lproj in Resources */,
-				681FEF943598C5C6655A7CA51773322F /* fr.lproj in Resources */,
-				810BE920769E5DB0D3A03507FCBD73F2 /* hu.lproj in Resources */,
-				023E3D21CC8D2E87E2F479E2C6765B30 /* it.lproj in Resources */,
-				48F291AF33B727F25E4FD0AE16343F9B /* ja.lproj in Resources */,
-				080FA5E1CA53FD0A5BA021C3AD77816F /* ko.lproj in Resources */,
-				F773679B34767DC58E9D234C8DC19849 /* mk.lproj in Resources */,
-				1F1729AE98DEE085CBB5DBF7E544DE3D /* nb.lproj in Resources */,
-				9636A0B3831B609C25D86DAD8E5286B3 /* nl.lproj in Resources */,
-				88434790D9B263071AE209138C441DE1 /* pl.lproj in Resources */,
-				865184FB080C3D31F00EDB0211BB40E3 /* pt.lproj in Resources */,
-				70DA5544474AA59D671B8C135C4CE3B1 /* pt_BR.lproj in Resources */,
-				7AF8953DFF2B20A4F5CCDCAB9EC8891D /* ru.lproj in Resources */,
-				202DC4BA29D222679D2A7ECA0144577D /* sk.lproj in Resources */,
-				692A775824953AC6B6623AA88AC03B41 /* sr.lproj in Resources */,
-				E46713430FBC68FDD3DD236FF5BD79AA /* sv.lproj in Resources */,
-				54B1C3494BD5E01863DF5036BBE00571 /* tr.lproj in Resources */,
-				4649D0449DD19A141C9534BC01934393 /* vi-VN.lproj in Resources */,
-				D04A82440E590EFD82B9B890B1351DC7 /* zh_CN.lproj in Resources */,
-				86197134C9088D33917A908A3E6C7D7C /* zh_TW.lproj in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A922CC6299B24ACC4BF450C412BBFCCD /* Resources */ = {
+		00020AB26DCCDCD67A3AC24BD15FE71B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,37 +289,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0BF903C30439E09EF0988661656A1ED7 /* Sources */ = {
+		96EE16D7E49F9D41FEE252E7F9E701F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315F2758746A6A4FA2C4FE654F413CC5 /* Pods-Lenovo BIOS USB Creator-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1988B8A81F245C4F3C155A948636CA3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B587B3E7D37E341BC611DA4067E44B2 /* LetsMove-dummy.m in Sources */,
-				04C0D085186241DF14CEF3D3C9542715 /* PFMoveApplication.m in Sources */,
+				9A597D0945E637C927FB7A42913623CC /* Pods-Lenovo BIOS USB Creator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F6BA492FCF15CA6B29DAE71019201101 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LetsMove;
-			target = F83960005EA88D0C24A1D277DD0E8667 /* LetsMove */;
-			targetProxy = 4924EBB206E6A07B8F024FCE4E12D68D /* PBXContainerItemProxy */;
-		};
-		FE70BCEB0D8FF0F3055E3422B8CEF1B2 /* PBXTargetDependency */ = {
+		8F801C5F41B7B7271D37F81BB726D446 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sparkle;
 			target = ED77B4B88587C894E85C361023D67C53 /* Sparkle */;
-			targetProxy = A3FD76F8AD7D4B26B6A5E7201F2314FC /* PBXContainerItemProxy */;
+			targetProxy = A24047A2049DFF47548605DC3D00AC53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -597,80 +368,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		4E201F9F95214CBFC7BFB36FAA624124 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86DE2224BE3FBEB438D59ED0E8B54BFC /* LetsMove.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LetsMove/LetsMove-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LetsMove/LetsMove-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/LetsMove/LetsMove.modulemap";
-				PRODUCT_MODULE_NAME = LetsMove;
-				PRODUCT_NAME = LetsMove;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5E585A510FC030E64DDC6BE5803CBF8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B870B99EAD9B970F684919996CB9D974 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -740,10 +437,11 @@
 			};
 			name = Debug;
 		};
-		AB152D6BB2C60807EF6535BCBC33F77E /* Release */ = {
+		898F65DA3E6846E2F5A4994937B60C7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB47E517E7D652C61AD77E4C19C6134A /* LetsMove.release.xcconfig */;
+			baseConfigurationReference = B870B99EAD9B970F684919996CB9D974 /* Pods-Lenovo BIOS USB Creator.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -755,22 +453,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LetsMove/LetsMove-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LetsMove/LetsMove-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/LetsMove/LetsMove.modulemap";
-				PRODUCT_MODULE_NAME = LetsMove;
-				PRODUCT_NAME = LetsMove;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -778,7 +477,7 @@
 		};
 		DBBD2247B2CC6D15A7DE9D05CA4C30E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B40238BEBC114ABF671756C00BE370AC /* Sparkle.debug.xcconfig */;
+			baseConfigurationReference = 41B59738C0BCF0042F3713929FCF7B7D /* Sparkle.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -793,7 +492,24 @@
 			};
 			name = Debug;
 		};
-		F0EA602679D0AD7D3B390C2EC371C6EA /* Debug */ = {
+		F84E7A7485F0E2F1E055E5C2D5BB7B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9050852DC5DAC3FBA159FEAF5D9914 /* Sparkle.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBEDC8DC7AAFED880B22084936230707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 021056621ACFC97912FEFE54E2F33412 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */;
 			buildSettings = {
@@ -831,35 +547,9 @@
 			};
 			name = Debug;
 		};
-		F84E7A7485F0E2F1E055E5C2D5BB7B7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DDFFFBE4CC78E57434F3033AE0F9ACB /* Sparkle.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				COMBINE_HIDPI_IMAGES = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20EE4026366387BA099377F69A4776C7 /* Build configuration list for PBXNativeTarget "LetsMove" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E201F9F95214CBFC7BFB36FAA624124 /* Debug */,
-				AB152D6BB2C60807EF6535BCBC33F77E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		31C3FA8CADE61CE3FE2492EDBA06C452 /* Build configuration list for PBXAggregateTarget "Sparkle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -878,11 +568,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CB59C53311F01AAA5AC0E0CC7DC48E8 /* Build configuration list for PBXNativeTarget "Pods-Lenovo BIOS USB Creator" */ = {
+		9F22401F7A3D4998C2D9F161F1B38370 /* Build configuration list for PBXNativeTarget "Pods-Lenovo BIOS USB Creator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0EA602679D0AD7D3B390C2EC371C6EA /* Debug */,
-				5E585A510FC030E64DDC6BE5803CBF8C /* Release */,
+				FBEDC8DC7AAFED880B22084936230707 /* Debug */,
+				898F65DA3E6846E2F5A4994937B60C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

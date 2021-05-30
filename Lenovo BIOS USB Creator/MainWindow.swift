@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import LetsMove
+//import LetsMove
 
 class MainWindow: NSViewController {
     
@@ -40,7 +40,7 @@ class MainWindow: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
 
-        PFMoveToApplicationsFolderIfNecessary()
+        //PFMoveToApplicationsFolderIfNecessary()
       
         
         let fontsize = CGFloat(13)

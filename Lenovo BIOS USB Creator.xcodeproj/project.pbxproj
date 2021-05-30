@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035C32534FA4B552D4B83141 /* Pods_Lenovo_BIOS_USB_Creator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94634E03BBC8429BC107A149 /* Pods_Lenovo_BIOS_USB_Creator.framework */; };
 		2A74E9E72418ECD00098FD34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74E9E62418ECD00098FD34 /* AppDelegate.swift */; };
 		2A74E9E92418ECD00098FD34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74E9E82418ECD00098FD34 /* ViewController.swift */; };
 		2A74E9EB2418ECD50098FD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A74E9EA2418ECD50098FD34 /* Assets.xcassets */; };
@@ -46,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		1B4129CDDBC9569CF1455257 /* Pods-Lenovo BIOS USB Creator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lenovo BIOS USB Creator.debug.xcconfig"; path = "Target Support Files/Pods-Lenovo BIOS USB Creator/Pods-Lenovo BIOS USB Creator.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2B8EE526644004005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B8EE92664401C005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B8EFC266441BE005E3BD2 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B8F052664420E005E3BD2 /* Pods_Lenovo_BIOS_USB_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Lenovo_BIOS_USB_Creator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5D7702241CCE7300F533C0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2A5D7703241CF2B400F533C0 /* lenovobiosusbcreator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = lenovobiosusbcreator.html; path = "Lenovo BIOS USB Creator/lenovobiosusbcreator.html"; sourceTree = "<group>"; };
 		2A74E9E32418ECD00098FD34 /* Lenovo BIOS USB Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lenovo BIOS USB Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035C32534FA4B552D4B83141 /* Pods_Lenovo_BIOS_USB_Creator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +132,10 @@
 		999FA46A06CC48CA936A15A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A2B8F052664420E005E3BD2 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
+				2A2B8EFC266441BE005E3BD2 /* LetsMove.framework */,
+				2A2B8EE92664401C005E3BD2 /* LetsMove.framework */,
+				2A2B8EE526644004005E3BD2 /* LetsMove.framework */,
 				94634E03BBC8429BC107A149 /* Pods_Lenovo_BIOS_USB_Creator.framework */,
 			);
 			name = Frameworks;
