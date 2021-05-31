@@ -12,8 +12,8 @@
 		2A74E9EB2418ECD50098FD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A74E9EA2418ECD50098FD34 /* Assets.xcassets */; };
 		2A74E9EE2418ECD50098FD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A74E9EC2418ECD50098FD34 /* Main.storyboard */; };
 		2A74E9F82418F5810098FD34 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74E9F62418F5810098FD34 /* MainWindow.swift */; };
-		2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74E9FC2418F6040098FD34 /* geteltorito.pl */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2A74EA042418FEE00098FD34 /* script.command in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74EA022418FECB0098FD34 /* script.command */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A74E9FE2418F60E0098FD34 /* geteltorito.pl in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74E9FC2418F6040098FD34 /* geteltorito.pl */; };
+		2A74EA042418FEE00098FD34 /* script.command in Copy Py-Script (2 items) */ = {isa = PBXBuildFile; fileRef = 2A74EA022418FECB0098FD34 /* script.command */; };
 		2A74EA0924191FF10098FD34 /* perl.zip in Copy Perl Bundle */ = {isa = PBXBuildFile; fileRef = 2A74EA0624191FD20098FD34 /* perl.zip */; };
 		2AF4FEBF266446AA008C3831 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AF4FEBE266446AA008C3831 /* Sparkle */; };
 /* End PBXBuildFile section */
@@ -227,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Lenovo\\ BIOS\\ USB\\ Creator.app\ncp -r \"${TARGET_BUILD_DIR}\"/Lenovo\\ BIOS\\ USB\\ Creator.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/lenovobiosusbcreator ]; then\ncp \"/Users/luigi/Documents/Xcode/lenovobiosusbcreator/Lenovo BIOS USB Creator/lenovobiosusbcreator.html\" \"/Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.html\"\nrm /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Lenovo\\ BIOS\\ USB\\ Creator.app /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Lenovo\\ BIOS\\ USB\\ Creator.app\nrm -r \"${TARGET_BUILD_DIR}\"/Lenovo\\ BIOS\\ USB\\ Creator.app/Contents/Resources/Perl/Sparkle.framework\nrm -r \"${TARGET_BUILD_DIR}\"/Lenovo\\ BIOS\\ USB\\ Creator.app/Contents/Resources/Script/Sparkle.framework\ncp -r \"${TARGET_BUILD_DIR}\"/Lenovo\\ BIOS\\ USB\\ Creator.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/lenovobiosusbcreator ]; then\ncp \"/Users/luigi/Documents/Xcode/lenovobiosusbcreator/Lenovo BIOS USB Creator/lenovobiosusbcreator.html\" \"/Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.html\"\nrm /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Lenovo\\ BIOS\\ USB\\ Creator.app /Volumes/Homeshare/Xcode/lenovobiosusbcreator/upload/lenovobiosusbcreator.zip\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -378,11 +378,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lenovo BIOS USB Creator/Lenovo_BIOS_USB_Creator.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Lenovo BIOS USB Creator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,11 +403,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lenovo BIOS USB Creator/Lenovo_BIOS_USB_Creator.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Lenovo BIOS USB Creator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
