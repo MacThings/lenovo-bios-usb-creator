@@ -25,9 +25,6 @@
 /* Class = "NSTextFieldCell"; title = "Lenovo® BIOS USB Creator"; ObjectID = "bqL-Sp-v26"; */
 "bqL-Sp-v26.title" = "Lenovo® BIOS USB Creator";
 
-/* Class = "NSMenuItem"; title = "Please select ..."; ObjectID = "DTI-CG-uWl"; */
-"DTI-CG-uWl.title" = "Bitte auswählen ...";
-
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Hilfe";
 
